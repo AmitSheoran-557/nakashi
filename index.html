@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/png/fav-icon-img.webp">
+    <title>Nakashi-LP</title>
+    <meta name="title" content="Escape to Paradise with Clever Travel" />
+    <meta name="description"
+        content="Discover the peace and beauty of breathtaking destinations, meticulously selected by our travel professionals to offer you a relaxing and luxurious escape." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vercel.com/amits-projects-fb1a793d/maincampaign" />
+    <meta property="og:title" content="Escape to Paradise with Clever Travel" />
+    <meta property="og:description"
+        content="Discover the peace and beauty of breathtaking destinations, meticulously selected by our travel professionals to offer you a relaxing and luxurious escape." />
+    <meta property="og:image" content="/meta-tag-img.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vercel.com/amits-projects-fb1a793d/maincampaign " />
+    <meta property="twitter:title" content="Escape to Paradise with Clever Travel" />
+    <meta property="twitter:description"
+        content="Discover the peace and beauty of breathtaking destinations, meticulously selected by our travel professionals to offer you a relaxing and luxurious escape." />
+    <meta property="twitter:image" content="/meta-tag-img.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/reality-hyper" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    "Sawarabi": ["Sawarabi Gothic", " sans-serif"],
+                    "hyper": ['Reality Hyper', 'sans-serif'],
+                },
+                container: {
+                    center: true,
+                    screens: {
+                        sm: "992px",
+                        "2xl": "1140px",
+                    },
+                },
+                extend: {
+                    animation: {
+                        blink: 'blink 1s infinite',
+                    },
+                    keyframes: {
+                        blink: {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.2 },
+                        },
+                    },
+                    fontSize: {
+                        "customSm": '32px',
+                        "customMd": '40px',
+                        "customLg": '64px',
+                        'customXl': '144px'
+                    },
+
+                    colors: {
+                        "primary": "#ED8C0C",
+                        "blue": "#403CFF",
+                        "light-white": "#F4F4F4",
+                        "light-brown": "#222222",
+                        "light-gray": "#CCCCCC",
+                    },
+                    boxShadow: {
+                        "light-1": '0px 0px 40px 0px #FFFFFF',
+                        "secondary": "white 0px 0px 20px 5px ",
+                    },
+                    backgroundImage: {
+                        'hero-bg': "url('assets/img/webp/hero-section-bg.png')",
+                        'hero-bg-2': "url('assets/img/webp/hero-bg-small.png ')",
+                        'black-bg': "url('assets/img/webp/black-bg.png')",
+                        'black-bg-2': "url('assets/img/webp/character-sec-bg.png')",
+                        'box-bg': "url('assets/img/webp/slider-sec-box-bg.png')",
+                        'btn-bg': "url('assets/img/webp/discord-btn-bg.png')",
+                        'btn-bg-2': "url('assets/img/webp/buy-now-btn-bg.png')",
+                        'vdo-bg': "url('assets/img/webp/vdo-frame-img.png')",
+                        'roadmap-bg': "url('assets/img/webp/roadmap-bg.png')",
+
+                    },
+                    background: {
+                        "linear": "linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%)",
+                    },
+                },
+            },
+            plugins: [],
+        };
+    </script>
+</head>
+
+<body>
+    <main class="overflow-hidden relative max-w-[1920px] mx-auto">
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn"
+            class="hidden icon fixed xl:bottom-5 lg:bottom-3 bottom-2 xl:right-5 lg:right-3 right-2 xl:px-[19px] xl:py-2.5 lg:px-[13px] lg:py-1 px-[11px] py-[2px] text-xl bg-blue text-white rounded-md shadow-md hover:bg-gray-600 transition-opacity z-[9999] animate-bounce">
+            ↑
+        </button>
+
+        <!-- ================================= Hero section ============================================= -->
+        <section class="lg:bg-hero-bg bg-hero-bg-2 bg-cover bg-center bg-no-repeat">
+            <div class="container px-3 mx-auto max-w-[1140px] w-full">
+                <nav class="flex justify-between items-center xl:py-5 lg:py-4 py-3">
+                    <a href="/"><img class="2xl:max-w-[118px] xl:max-w-24 max-w-20"
+                            src="./assets/img/webp/page-logo.png" alt="page-logo"></a>
+                    <div
+                        class="flex menulist justify-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 backdrop-blur-[40px] z-[100] lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
+                        <div
+                            class="font-medium xl:text-[13px] text-xs text-white 2xl:gap-[40px] xl:gap-8 lg:gap-7 gap-5 flex max-lg:flex-col max-lg:text-center">
+                            <a class="hover:text-primary duration-300 ease-linear" href="# ">ABOUT</a>
+                            <a class="hover:text-primary duration-300 ease-linear" href="#services">CHARACTER</a>
+                            <a class="hover:text-primary duration-300 ease-linear" href="#contact">GALLERY</a>
+                            <a class="hover:text-primary duration-300 ease-linear" href="#quote">HOW IT WORKS</a>
+                            <a class="hover:text-primary duration-300 ease-linear" href="#quote">ROADMAP</a>
+                            <a class="hover:text-primary duration-300 ease-linear" href="#quote">ROADMAP</a>
+                            <a class="hover:text-primary duration-300 ease-linear" href="#quote">TEAM</a>
+                            <a class="hover:text-primary duration-300 ease-linear" href="#quote">FAQ</a>
+                            <div class="lg:pb-[100px] flex gap-4 xl:mt-[220px] lg:hidden block">
+                                <a href=""
+                                    class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                    <img class="xl:size-5" src="./assets/img/svg/telegram-icon.svg" alt="telegram-icon">
+                                </a>
+                                <a href="/"
+                                    class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                    <img class="xl:size-5" src="./assets/img/svg/discord-icon.svg" alt="discord-icon">
+                                </a>
+                                <a href="/"
+                                    class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                    <img class="xl:size-5" src="./assets/img/svg/twitter-icon.svg" alt="twitter-icon">
+                                </a>
+                                <a href="/"
+                                    class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                    <img class="xl:size-5" src="./assets/img/svg/logomark-icon.svg"
+                                        alt="logo-mark-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="menu-bar"
+                        class="flex flex-col lg:hidden menubar text-end justify-between cursor-pointer z-[200] scroll-m-0 lg:w-8 w-[25.5px] h-3">
+                        <img src="./assets/img/svg/nav-bar-btn.svg" alt="nav-bar-btn">
+                    </div>
+                </nav>
+            </div>
+            <div class="container px-3 relative">
+                <img class="absolute max-w-[550px] -left-10 top-20 hidden lg:block"
+                    src="./assets/img/webp/blue-bg-img.png" alt="blue-bg-img">
+                <div class="flex flex-wrap max-lg:flex-col-reverse">
+                    <div class="lg:w-4/12 w-full relative flex flex-col items-center">
+                        <img class="max-w-[132px] absolute -left-24 top-16 hidden lg:block"
+                            src="./assets/img/webp/character-name.png" alt="character-name">
+                        <div class="w-[1px] h-[344px] bg-white absolute -left-8 top-[280px] hidden lg:block"></div>
+                        <h4
+                            class="max-w-[260px] max-sm:mt-1 text-center text-sm lg:text-white lg:mt-[167px] font-Sawarabi xl:mb-[29px] lg:mb-6 md:mb-4 mb-2">
+                            ナカシと彼の友人が彼らの宇宙宇宙をゴバーンから救おうとしている物語</h4>
+                        <p
+                            class=" max-w-[327px] font-light text-sm text-center leading-primary lg:text-white lg:mb-[17px] mb-4">
+                            The
+                            story of Nakashi and his friends trying to save
+                            their universe from Gobern</p>
+                        <h1 class="max-w-80 lg:text-white text-5xl text-center max-lg:mb-12 max-sm:mb-[104px]">4000
+                            Pages Manga
+                            NFTs
+                            Collections</h1>
+                        <div class="lg:pb-[100px] lg:flex gap-4 xl:mt-[220px] lg:mt-48 max-lg:hidden lg:block">
+                            <a href=""
+                                class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                <img class="xl:size-5" src="./assets/img/svg/telegram-icon.svg" alt="telegram-icon">
+                            </a>
+                            <a href="/"
+                                class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                <img class="xl:size-5" src="./assets/img/svg/discord-icon.svg" alt="discord-icon">
+                            </a>
+                            <a href="/"
+                                class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                <img class="xl:size-5" src="./assets/img/svg/twitter-icon.svg" alt="twitter-icon">
+                            </a>
+                            <a href="/"
+                                class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                <img class="xl:size-5" src="./assets/img/svg/logomark-icon.svg" alt="logo-mark-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:w-8/12 w-full relative">
+                        <img class="max-w-[750px] lg:max-h-[1000px] w-full max-sm:translate-y-3 max-sm:ml-[10px] max-sm:max-w-[330px]"
+                            src="./assets/img/webp/hero-sec-img.png" alt="character-img">
+                        <a class="hidden lg:block" href="/"><img
+                                class="absolute gelatine -right-[11%] bottom-[31.5%] max-w-12"
+                                src="./assets/img/webp/page-down-arrow.png" alt="page-down-arrow"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================================= Nakashi project section ================================== -->
+        <section
+            class="bg-black-bg bg-cover min-h-screen max-lg:pt-32 -mt-1 flex justify-center items-center max-sm:pb-[50px]">
+            <div class="container mx-auto px-3">
+                <div class="flex flex-wrap ">
+                    <div class="lg:w-6/12 w-full relative flex justify-center items-center">
+                        <img class="absolute -top-[120px] lg:-left-9 bg-blend-multiply lg:max-w-[558px] md:max-w-sm"
+                            src="./assets/img/webp/golden-bg.png" alt="golden-bg">
+                        <h2 class="font-Sawarabi text-9xl drop-shadow-2xl shadow-white text-white relative z-10">約</h2>
+                    </div>
+                    <div
+                        class="lg:w-6/12 w-full flex flex-col max-lg:justify-center max-lg:items-center max-lg:mt-[100px] relative z-10">
+                        <p class="lg:text-lg md:text-base text-sm font-light tracking-[8%] mb-[10px] text-white">ABOUT
+                        </p>
+                        <h2
+                            class="xl:text-customLg lg:text-5xl text-4xl tracking-[4%] leading-none font-hyper mb-10 max-w-96  max-lg:text-center text-white">
+                            NAKASHI
+                            PROJECT</h2>
+                        <p
+                            class="lg:max-w-[446px] font-light lg:text-sm text-[13px] max-md:max-w-[326px] leading-primary tracking-[2%] text-light-white lg:ps-[73px]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================= Pages section =========================================== -->
+        <section class="flex justify-center items-center relative lg:pt-[146px] lg:pb-[157px] max-lg:py-[130px]">
+            <img class="w-full max-w-[1920px] absolute top-0 -mt-[1px]" src="./assets/img/webp/white-black-img-1.png"
+                alt="black-white-img">
+            <img class="w-full max-w-[1920px] absolute bottom-0 " src="./assets/img/webp/white-black-img-2.png"
+                alt="black-white-img">
+            <div class="container mx-auto px-3">
+                <div class="flex flex-wrap max-lg:flex-col-reverse">
+                    <div class="lg:w-6/12 flex flex-col  justify-center max-lg:items-center">
+                        <p class="lg:text-lg md:text-base text-sm font-light tracking-[8%] mb-[10px] ">PAGES</p>
+                        <h2 id="counter"
+                            class="lg:text-8xl text-customLg tracking-[4%] leading-none font-hyper lg:mb-10 md:mb-7 mb-5">
+                            1</h2>
+
+                        <p
+                            class="lg:max-w-[446px] max-sm:px-3 font-light lg:text-sm text-[13px] leading-primary tracking-[2%] lg:ps-[73px]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="lg:w-6/12 relative flex justify-center ">
+                        <img class="max-w-[660px] w-full max-sm:max-w-[343px]" src="./assets/img/webp/pages-img.png"
+                            alt="pages-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================= Slider section ========================================== -->
+        <section
+            class="max-sm:min-h-[800px] bg-black-bg-2 bg-cover bg-no-repeat flex justify-center items-center relative -mt-1 pb-20 lg:pt-[116px] pt-[58px]">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap">
+                    <div class="lg:w-6/12 flex flex-col mx-auto justify-center max-lg:items-center">
+                        <div class="relative">
+                            <img class="absolute lg:max-w-[510px] max-w-64  lg:top-3 top-[7px]"
+                                src="./assets/img/webp/chara-img.png" alt="chara-img">
+                            <h2 class="lg:text-customLg text-4xl tracking-[4%] leading-none font-hyper text-white">
+                                CHARACTER</h2>
+                            <p class="lg:mb-[76px] mb-[50px] text-2xl font-sawarabi text-white">キャラクター</p>
+                        </div>
+                        <p
+                            class="lg:max-w-[440px] font-light text-sm max-lg:px-3 leading-primary tracking-[2%] text-light-white mb-[172px]">
+                            Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                        <div
+                            class="max-w-[655px] bg-box-bg bg-cover lg:px-[60px] lg:py-[60px] md:px-8 px-6 py-[50px] w-full mb-10 ">
+                            <h3
+                                class="font-hyper xl:text-5xl lg:text-4xl md:text-3xl text-2xl max-lg:text-center mb-4 tracking-[4%] text-white">
+                                THALIK</h3>
+                            <p
+                                class="lg:text-sm text-[13px] font-light tracking-[2%] leading-primary max-w-[408px] text-white lg:mb-8 mb-5 max-lg:text-center">
+                                Lorem ipsum
+                                is simply dummy text of the
+                                printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s.</p>
+                            <div class="flex max-md:flex-col lg:gap-10 md:gap-7 gap-[10px] items-center mb-5">
+                                <p class="text-white font-semibold text-base">Combat</p>
+                                <div class="flex space-x-[2px] w-64 h-4 items-center">
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="  animate-blink"><svg width="40" height="4" viewBox="0 0 40 4"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flex max-md:flex-col lg:gap-10 md:gap-7 gap-[10px] items-center">
+                                <p class="text-white font-semibold text-base">Skill</p>
+                                <div class="flex space-x-[2px]  w-64 md:ps-7 h-4 items-center">
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="  animate-blink"><svg width="40" height="4" viewBox="0 0 40 4"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.2" d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+
+                                    </div>
+                                    <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.2" d="M2 0H40L38 4H0L2 0Z" fill="white" />
+                                        </svg>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 relative">
+                        <img class="max-w-[660px] w-full max-sm:max-w-[343px]" src="./assets/img/webp/pages-img.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================= Grid img section ========================================== -->
+        <section class="py-[50px]">
+            <div class="container">
+                <div class="flex justify-between items-center mx-auto max-lg:flex-col">
+                    <div
+                        class=" mx-auto text-center max-lg:mb-[50px] bg-[url('assets/images/png/manga-bg-img.png')] max-lg:w-full w-[572px] bg-no-repeat">
+                        <p class="text-[64px] font-normal text-light-brown leading-[100%] font-hyper pt-[18px]">GALLERY
+                        </p>
+                        <p class="text-light-brown font-normal text-2xl leading-[150%]">マンガのギャラリー</p>
+                    </div>
+                    <div class="max-w-[364px]">
+                        <p class="font-semibold text-light-brown text-lg text-end">20 / 100%</p>
+                        <img class="max-w-[364px]" src="/assets/img/webp/progress-bar.png" alt="progress-bar">
+                    </div>
+                </div>
+                <p
+                    class="font-light lg:text-2xl text-base text-light-brown text-center pt-[100px] max-lg:pt-[50px] mb-[50px] max-md:pt-6">
+                    4000 pages of story will be made</p>
+                <div
+                    class=" flex items-center justify-center max-lg:px-4 lg:gap-6 gap-4 mb-[100px] max-lg:mb-14 max-md:mb-9 max-sm:mb-[50px] max-lg:flex-col">
+                    <div
+                        class="border border-solid border-light-gray max-w-[267px] max-h-[100px] flex items-center justify-center flex-col w-full py-[24px] max-md:max-w-none">
+                        <p class=" font-light text-[13px] text-light-brown">Listed</p>
+                        <div class="flex items-center">
+                            <p class="font-semibold text-light-brown text-2xl pr-2">800</p>
+                            <p class=" text-light-brown font-normal text-sm opacity-50">/4000</p>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-solid border-light-gray max-w-[267px] max-h-[100px] flex items-center justify-center flex-col w-full py-[24px] max-md:max-w-none">
+                        <p class=" font-light text-[13px] text-light-brown">OWNERS</p>
+                        <div class="flex items-center">
+                            <p class="font-semibold text-light-brown text-2xl ">400</p>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-solid border-light-gray max-w-[267px] max-h-[100px] flex items-center justify-center flex-col w-full py-[24px] max-md:max-w-none">
+                        <p class=" font-light text-[13px] text-light-brown">FLOOR PRICE</p>
+                        <div class="flex items-center gap-[10px]">
+                            <img class="max-w-3" src="/assets/img/webp/etherium-logo.png" alt="etherium-logo">
+                            <p class=" font-semibold text-light-brown text-2xl">0.12 ETH</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class=" relative max-sm:max-w-none gap-6 max-w-[267px] w-full flex items-center justify-center bg-blue">
+                        <img class="max-w-3 -top-[2px] -left-[2px] absolute" src="./assets/img/webp/btn-side-img.png"
+                            alt="Polygon">
+                        <img class="max-w-3 -bottom-[2px] -right-[2px] rotate-180 absolute"
+                            src="./assets/img/webp/btn-side-img.png" alt="Polygon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 0C8.956 0 0 8.956 0 20C0 31.044 8.956 40 20 40C31.044 40 40 31.044 40 20C40 8.956 31.048 0 20 0ZM9.868 20.672L9.952 20.536L15.156 12.396C15.232 12.28 15.412 12.292 15.468 12.42C16.336 14.368 17.088 16.792 16.736 18.3C16.588 18.92 16.176 19.76 15.712 20.536C15.652 20.648 15.588 20.76 15.516 20.868C15.484 20.916 15.428 20.944 15.368 20.944H10.02C9.876 20.944 9.792 20.788 9.868 20.672ZM33.056 23.472C33.056 23.548 33.012 23.612 32.948 23.64C32.544 23.812 31.164 24.448 30.592 25.244C29.128 27.28 28.012 30.192 25.512 30.192H15.088C11.392 30.192 8.4 27.188 8.4 23.48V23.36C8.4 23.264 8.48 23.184 8.58 23.184H14.388C14.504 23.184 14.588 23.288 14.58 23.404C14.536 23.78 14.608 24.168 14.788 24.52C15.132 25.22 15.848 25.656 16.62 25.656H19.496V23.412H16.652C16.508 23.412 16.42 23.244 16.504 23.124C16.536 23.076 16.568 23.028 16.608 22.972C16.876 22.588 17.26 21.996 17.644 21.32C17.904 20.864 18.156 20.376 18.36 19.888C18.4 19.8 18.432 19.708 18.468 19.62C18.524 19.464 18.58 19.316 18.62 19.172C18.66 19.048 18.696 18.92 18.728 18.8C18.824 18.384 18.864 17.944 18.864 17.488C18.864 17.308 18.856 17.12 18.84 16.944C18.832 16.748 18.808 16.552 18.784 16.356C18.768 16.184 18.736 16.012 18.704 15.836C18.66 15.576 18.604 15.316 18.54 15.056L18.516 14.956C18.468 14.776 18.424 14.608 18.368 14.428C18.204 13.868 18.02 13.32 17.82 12.808C17.748 12.604 17.668 12.408 17.584 12.216C17.464 11.92 17.34 11.652 17.228 11.4C17.168 11.284 17.12 11.18 17.072 11.072C17.016 10.952 16.96 10.832 16.9 10.716C16.86 10.628 16.812 10.544 16.78 10.464L16.428 9.816C16.38 9.728 16.46 9.62 16.556 9.648L18.756 10.244H18.764C18.768 10.244 18.768 10.244 18.772 10.244L19.06 10.328L19.38 10.416L19.496 10.448V9.144C19.496 8.512 20 8 20.628 8C20.94 8 21.224 8.128 21.424 8.336C21.628 8.544 21.756 8.828 21.756 9.144V11.084L21.992 11.148C22.008 11.156 22.028 11.164 22.044 11.176C22.1 11.216 22.184 11.28 22.288 11.36C22.372 11.424 22.46 11.504 22.564 11.588C22.776 11.76 23.032 11.98 23.308 12.232C23.38 12.296 23.452 12.36 23.52 12.428C23.876 12.76 24.276 13.148 24.66 13.58C24.768 13.704 24.872 13.824 24.98 13.956C25.084 14.088 25.2 14.216 25.296 14.344C25.428 14.516 25.564 14.696 25.688 14.884C25.744 14.972 25.812 15.064 25.864 15.152C26.024 15.388 26.16 15.632 26.292 15.876C26.348 15.988 26.404 16.112 26.452 16.232C26.6 16.56 26.716 16.892 26.788 17.228C26.812 17.3 26.828 17.376 26.836 17.448V17.464C26.86 17.56 26.868 17.664 26.876 17.772C26.908 18.112 26.892 18.456 26.82 18.8C26.788 18.944 26.748 19.08 26.7 19.228C26.648 19.368 26.6 19.512 26.536 19.652C26.412 19.936 26.268 20.224 26.096 20.488C26.04 20.588 25.972 20.692 25.908 20.792C25.836 20.896 25.76 20.996 25.696 21.092C25.604 21.216 25.508 21.344 25.408 21.46C25.32 21.58 25.232 21.7 25.132 21.808C24.996 21.972 24.864 22.124 24.724 22.272C24.644 22.368 24.556 22.468 24.464 22.556C24.376 22.656 24.284 22.744 24.204 22.824C24.064 22.964 23.952 23.068 23.856 23.16L23.628 23.364C23.596 23.396 23.552 23.412 23.508 23.412H21.756V25.656H23.96C24.452 25.656 24.92 25.484 25.3 25.16C25.428 25.048 25.992 24.56 26.66 23.824C26.684 23.796 26.712 23.78 26.744 23.772L32.828 22.012C32.944 21.98 33.056 22.064 33.056 22.184V23.472Z"
+                                fill="white" />
+                        </svg>
+                        <span class="border border-solid border-white h-[97px] max-md:h-[64px] w-0 opacity-20"></span>
+                        <p class=" font-bold text-lg text-white max-w-[121px] max-sm:max-w-none">BUY NOW
+                            AT
+                            OPENSEA</p>
+                    </div>
+
+                </div>
+                <div class="flex flex-col lg:gap-5 gap-2">
+
+                    <div class="grid grid-flow-col lg:gap-4 gap-2 overflow-x-auto">
+                        <img src="./assets/img/webp/grid-sec-img-1.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/img/webp/grid-sec-img-3.png " alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-4.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    </div>
+
+                    <div class="grid grid-flow-col lg:gap-4 gap-2 overflow-x-auto">
+                        <img src="./assets/img/webp/grid-sec-img-5.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-4.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-3.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-2.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-1.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    </div>
+
+                    <div class="grid grid-flow-col lg:gap-4 gap-2 overflow-x-auto">
+                        <img src="./assets/img/webp/grid-sec-img-2.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-3.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-1.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-4.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/img/webp/grid-sec-img-5.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================================= How it work section ===================================== -->
+        <section class="lg:pt-[100px] lg:pb-[200px] pt-[50px] pb-[130px]">
+            <div class="container mx-auto flex justify-center items-center">
+                <div class="flex flex-col flex-wrap">
+                    <div class="relative">
+                        <img class="absolute lg:max-w-[510px] max-w- lg:top-3 top-[7px]"
+                            src="./assets/img/webp/chara-img.png" alt="chara-img">
+                        <h2 class="lg:text-customLg text-4xl tracking-[4%] leading-none font-hyper text-center">how IT
+                            WORKS
+                        </h2>
+                        <p class="lg:mb-[136px] mb-[50px] text-2xl font-sawarabi text-center">使い方</p>
+                    </div>
+                    <p class="font-light lg:text-2xl md:text-xl text-base tracking-[2%] lg:mb-6 text-center">Mixed
+                        reality NFTs
+                        project</p>
+                    <p
+                        class="max-w-[752px] font-light lg:text-sm text-[13px] tracking-[2%] text-center mx-auto lg:mb-[112px] mb-[95px]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book.
+                    </p>
+
+                    <div
+                        class="lg:w-[1140px] md:w-lg sm:w-sm w-[375px] mx-auto max-h-[642px] lg:h-[642px] h-[212px]  bg-vdo-bg bg-cover bg-no-repeat relative flex justify-center items-center">
+                        <img src="./assets/img/svg/play-btn-svg.svg" alt="play-btn-svg">
+                        <img class="absolute lg:-top-[62px] md:-top-[49px] -top-[46px] lg:max-w-[400px] md:max-w-80 max-w-[300px] -z-10"
+                            src="./assets/img/webp/blue-box-img.png" alt="blue-box-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================= Roadmap section ===================================== -->
+        <section id="roadmap" class="bg-black-bg bg-cover bg-black bg-center bg-no-repeat lg:py-[100px] py-[50px]">
+            <div class="container">
+                <div class="n mx-auto w-full max-w-[770px] relative">
+                    <img class="absolute top-7 max-w-[790px]" src="./assets/img/webp/roadmap-bg.png" alt="roadmap-bg">
+                    <p class="font-hyper font-normal text-[64px] text-center text-white">ROADMAP</p>
+                    <p class="text-center text-2xl leading-[150%] text-white translate-y-[-18px]">ロードマップ</p>
+                </div>
+                <div
+                    class="max-lg:overflow-hidden flex items-center justify-center flex-col pt-24 max-lg:pt-10 max-md:pt-7 max-sm:pt-5">
+                    <p class="text-white font-light text-2xl text-center relative z-10">There’s more than one star in
+                        the galaxy</p>
+                    <img id="galaxy" src="/assets/img/webp/roadmap-gallxy-img.png" alt="galaxy-img"
+                        class="lg:max-w-[700px] max-sm:max-w-[400px] w-full lg:h-[700px] translate-y-[-56px]">
+                </div>
+                <div class="road-map-parent">
+                    <div class="w-full max-w-[364px] max-lg:px-6 group max-md:mx-auto mt-12 roadmap-box">
+                        <div class="justify-between flex">
+                            <p class="text-light-white font-normal text-[13px]">PHASE 1</p>
+                            <div
+                                class="text-light-white border border-solid border-light-white w-5 h-5  rounded-full p-[4px] bg-black flex items-center justify-center">
+                                <p
+                                    class="point-hover w-[10px] h-[10px] group-hover:bg-white rounded-full transition-all ease-linear duration-200">
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="font-hyper text-white font-normal text-[32px] pt-6 max-md:text-[28px]">Q2 2022</h4>
+                        <p class="text-sm text-light-white text-lexendDeca pt-6 max-md:text-[13px]">Lorem Ipsum is
+                            simply
+                            dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since.</p>
+                    </div>
+
+                    <div class="w-full max-w-[364px] max-lg:px-6 ml-auto group max-md:mr-auto mt-12 roadmap-box">
+                        <div class="justify-between flex">
+                            <p class="text-light-white font-normal text-[13px]">PHASE 2</p>
+                            <div
+                                class="text-light-white border border-solid border-light-white w-5 h-5 rounded-full p-1 flex items-center justify-center">
+                                <p
+                                    class=" w-[10px] h-[10px] group-hover:bg-white rounded-full  transition-all ease-linear duration-200 point-hover">
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="font-hyper text-white font-normal text-[32px] pt-6 max-md:text-[28px]">Q3 2022</h4>
+                        <p class="text-sm text-light-white text-lexendDeca pt-6 max-md:text-[13px]">Lorem Ipsum is
+                            simply
+                            dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    </div>
+
+                    <div class="w-full max-w-[364px] max-lg:px-6 group max-md:mx-auto mt-12 roadmap-box">
+                        <div class="justify-between flex">
+                            <p class="text-light-white font-normal text-[13px]">PHASE 3</p>
+                            <div
+                                class="text-light-white border border-solid border-light-white w-5 h-5 rounded-full p-1 flex items-center justify-center">
+                                <p
+                                    class=" w-[10px] h-[10px] group-hover:bg-white rounded-full point-hover transition-all ease-linear duration-200">
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="font-hyper text-white font-normal text-[32px] pt-6 max-md:text-[28px]">Q3 2022</h4>
+                        <p class="text-sm text-light-white text-lexendDeca pt-6 max-md:text-[13px]">Lorem Ipsum is
+                            simply
+                            dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    </div>
+
+                    <div class="w-full max-w-[364px] max-lg:px-6 group ml-auto max-md:mr-auto mt-12 roadmap-box ">
+                        <div class="justify-between flex">
+                            <p class="text-light-white font-normal text-[13px]">PHASE 4</p>
+                            <div
+                                class="text-light-white border border-solid border-light-white w-5 h-5 rounded-full p-1 flex items-center justify-center">
+                                <p
+                                    class=" w-[10px] h-[10px] group-hover:bg-white rounded-full transition-all ease-linear duration-200 point-hover">
+                                </p>
+                            </div>
+                        </div>
+                        <h4 class="font-hyper text-white font-normal text-[32px] pt-6 max-md:text-[28px]">Q1 / Q2 2023
+                        </h4>
+                        <p class="text-sm text-light-white text-lexendDeca pt-6 max-md:text-[13px]">Lorem Ipsum is
+                            simply
+                            dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ================================= Team section ===================================== -->
+        <section id="roadmap" class="bg-black-bg bg-cover bg-black bg-center bg-no-repeat lg:py-[100px] py-[50px]">
+            <div class="container">
+                <div class="n mx-auto w-full mb-[100px] max-w-[770px] relative">
+                    <img class="absolute top-7 max-w-[790px]" src="./assets/img/webp/roadmap-bg.png" alt="team-bg">
+                    <p class="font-hyper font-normal text-[64px] text-center text-white">TEAM</p>
+                    <p class="text-center text-2xl leading-[150%] text-white translate-y-[-18px]">私たちのチーム</p>
+                </div>
+                <div class="flex items-center justify-center flex-col pb-[100px]">
+                    <p class="text-white font-light text-2xl text-center relative z-10">See who’s behind this cool
+                        project</p>
+                </div>
+                <div class="max-lg:hidden block">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto mb-[100px]">
+                        <div class="max-w-[267px]">
+                            <img class="mx-auto lg:mb-5 w-full" src="./assets/img/webp/team-member-img.png"
+                                alt="Marco-Steen" />
+                            <h3 class="text-lg font-semibold text-white mb-2 uppercase">Marco Stein</h3>
+                            <p class="text-light-white font-light text-xs tracking-[2%]">
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                        <div class="max-w-[267px]">
+                            <img class="mx-auto lg:mb-5 w-full" src="./assets/img/webp/team-member-img-2.png"
+                                alt="Imogen-Mckinney" />
+                            <h3 class="text-lg font-semibold text-white mb-2 uppercase">Imogen Mckinney</h3>
+                            <p class="text-light-white font-light text-xs tracking-[2%]">
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                        <div class="max-w-[267px]">
+                            <img class="mx-auto lg:mb-5 w-full" src="./assets/img/webp/team-member-img-3.png"
+                                alt="Rai Lyons" />
+                            <h3 class="text-lg font-semibold text-white mb-2 uppercase">Rai Lyons</h3>
+                            <p class="text-light-white font-light text-xs tracking-[2%]">
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                        <div class="max-w-[267px]">
+                            <img class="mx-auto lg:mb-5 w-full" src="./assets/img/webp/team-member-img-4.png"
+                                alt="Kaiya Dunlap" />
+                            <h3 class="text-lg font-semibold text-white mb-2 uppercase">Kaiya Dunlap</h3>
+                            <p class="text-light-white font-light text-xs tracking-[2%]">
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mx-auto flex justify-center gap-6 mt-9">
+                        <div class="xl:max-w-[267px] lg:max-w-[230px]">
+                            <img class="mx-auto lg:mb-5 w-full" src="./assets/img/webp/team-member-img-5.png"
+                                alt="Michio Barr" />
+                            <h3 class="text-lg font-semibold text-white mb-2 uppercase">Michio Barr</h3>
+                            <p class="text-light-white font-light text-xs tracking-[2%]">
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                        <div class="xl:max-w-[267px] lg:max-w-[230px]">
+                            <img class="mx-auto mb-5 w-full" src="./assets/img/webp/team-member-img-6.png"
+                                alt="Ryo Navarro" />
+                            <h3 class="text-lg font-semibold text-white mb-2 uppercase">Ryo Navarro</h3>
+                            <p class="text-light-white font-light text-xs tracking-[2%]">
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                        <div class="xl:max-w-[267px] lg:max-w-[230px]">
+                            <img class="mx-auto lg:mb-5 w-full" src="./assets/img/webp/team-member-img-7.png"
+                                alt="Tianna Bauer" />
+                            <h3 class="text-lg font-semibold text-white mb-2 uppercase">Tianna Bauer</h3>
+                            <p class="text-light-white font-light text-xs tracking-[2%]">
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ================================= Accordion section ======================================= -->
+        <section
+            class="max-sm:min-h-[800px] bg-black-bg-2 bg-black bg-cover bg-no-repeat flex justify-center items-center relative -mt-1 lg:py-[100px] py-[50px]">
+            <div class="container mx-auto px-3 justify-center flex flex-col items-center relative">
+                <img class="absolute lg:max-h-[908px] min-h-[900px] max-lg:hidden"
+                    src="./assets/img/webp/accordion-around-img.png" alt="accordion-around-img">
+                <div class="mb-[100px]">
+                    <img class="max-w-[319px] w-full" src="./assets/img/webp/fag-img.png" alt="fag-img">
+                </div>
+
+                <h4 class="font-light text-2xl tracking-[2%] text-white mx-auto max-w-[314px] mb-[100px] text-center">
+                    Frequently Asked Question</h4>
+                <div class="max-w-[752px] mx-auto">
+                    <div class="space-y-4">
+                        <!-- Accordion Item 1 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item1" class="hidden peer" />
+                            <label for="item1"
+                                class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                01 &nbsp; When is the mint date?
+                                <svg id="icon1" class="w-3 h-3 transition-all transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-light-white">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item2" class="hidden peer" checked />
+                            <label for="item2"
+                                class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                02 &nbsp; How much will each nakashi pages cost?
+                                <svg id="icon2" class="w-3 h-3 transition-all transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-light-white">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item3" class="hidden peer" />
+                            <label for="item3"
+                                class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                03 &nbsp; How can I use my NFTs?
+                                <svg id="icon3" class="w-3 h-3 transition-all transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-light-white">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item4" class="hidden peer" />
+                            <label for="item4"
+                                class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                04 &nbsp; How to play with real Nakashi manga pages?
+                                <svg id="icon4" class="w-3 h-3 transition-all transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-light-white">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 5 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item5" class="hidden peer" />
+                            <label for="item5"
+                                class="flex items-center justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                05 &nbsp; How can I use my NFTs?
+                                <svg id="icon5" class="w-3 h-3 transition-all transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-light-white">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================= Community section ======================================= -->
+        <section class=" bg-black-bg-2 bg-black bg-cover bg-no-repeat lg:min-h-[900px] relative -mt-1">
+            <div class="container mx-auto ">
+                <div class="flex flex-wrap">
+                    <div class="lg:w-8/12 lg:px-3 relative flex justify-center items-center mx-auto">
+                        <img class="xl:max-w-[900px] lg:max-w-2xl max-w-2xl max-lg:hidden block max-lg:w-full lg:absolute xl:-left-40 lg:-left-20 lg:top-0"
+                            src="./assets/img/webp/community-section-img.png" alt="characters-img">
+                        <img class="max-lg:block max-sm:hidden" src="./assets/img/webp/community-sec-img-2.png"
+                            alt="characters-img">
+                        <img class="max-sm:block hidden" src="./assets/img/webp/community-sec-img-sm.png"
+                            alt="characters-img">
+                    </div>
+                    <div class="lg:w-4/12 px-3 flex flex-col justify-center mx-auto max-lg:items-center lg:pt-80 pt-10">
+                        <h2 class="xl:text-customMd tracking-[4%] leading-none font-hyper text-white mb-6 ">JOIN NAKASHI
+                            COMMUNITY</h2>
+                        <p class="font-light text-lg text-white max-w-[330px] mb-10">Be part of our amazing community &
+                            stay tuned for the news.</p>
+                        <button class="bg-btn-bg bg-contain bg-no-repeat over px-5   max-w-[280px] flex items-center">
+                            <div class="border-white border-r border-opacity-[20%] border-h-full pr-6 py-[18px]">
+                                <img src="./assets/img/svg/discord-icon.svg" alt="">
+                            </div>
+                            <p class="text-lg font-bold text-white pl-6 py-[18px]">JOIN DISCORD</p>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================= Footer section ========================================== -->
+        <footer class="bg-black-bg-2 bg-black -mt-1 bg-cover xl:py-[127px] lg:py-24 md:py-16 py-12">
+            <div class="container px-3 mx-auto">
+                <div class="flex flex-wrap">
+                    <div class="md:w-6/12 w-full max-lg:text-center">
+                        <a href="/">
+                            <h4 class="font-hyper text-2xl tracking-[4%] text-white">NAKASHI</h4>
+                        </a>
+                        <p class="text-xs font-light text-white tracking-[8%]">COPYRIGHT © 2022. all rights reserved</p>
+                    </div>
+                    <div class="md:w-6/12 w-full flex lg:justify-end justify-center md:pt-0 pt-10">
+                        <div class="flex gap-4">
+                            <a href=""
+                                class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                <img class="xl:size-5" src="./assets/img/svg/telegram-icon.svg" alt="telegram-icon">
+                            </a>
+                            <a href="/"
+                                class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                <img class="xl:size-5" src="./assets/img/svg/discord-icon.svg" alt="discord-icon">
+                            </a>
+                            <a href="/"
+                                class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                <img class="xl:size-5" src="./assets/img/svg/twitter-icon.svg" alt="twitter-icon">
+                            </a>
+                            <a href="/"
+                                class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
+                                <img class="xl:size-5" src="./assets/img/svg/logomark-icon.svg" alt="logo-mark-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/js/app.js" defer></script>
+    </main>
+</body>
+
+</html>
