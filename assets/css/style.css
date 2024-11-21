@@ -2,6 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/reality-hyper');
 *{
     font-family: "Lexend Deca", sans-serif;
+    scroll-behavior: smooth !important;
 }
 .leading-primary{
     line-height: 150% !important;
@@ -20,4 +21,19 @@
   /* =================================================================== */
   .grid::-webkit-scrollbar {
 display: none;
+  }
+ 
+
+  .founder{
+    max-width: 267px;
+  }
+
+  .slick-track{
+    display: flex !important;
+    gap: 24px !important;
+  }
+@media(max-width:640.99px){
+    .founder{
+      max-width: 245px;
+    }
   }

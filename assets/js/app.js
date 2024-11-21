@@ -12,9 +12,10 @@ function toggleMenu() {
     if (window.innerWidth < 1024) {
         menuList.classList.toggle("-right-full");
         menuList.classList.toggle("right-0");
-        menubarFirst.classList.toggle("rotate-[44deg]");
+        menubarFirst.classList.toggle("hidden");
+        menubarFirst.classList.toggle("w-full");
         menubarSecond.classList.toggle("hidden");
-        menubarThird.classList.toggle("-rotate-[44deg]");
+        toggleImage.style.display = toggleImage.style.display === 'block' ? 'none' : 'block';
         body.classList.toggle("overflow-hidden");
     }
 }
@@ -55,7 +56,7 @@ radioButtons.forEach(radio => {
     });
 });
 document.querySelector('input[name="accordion"]:checked').dispatchEvent(new Event('change'));
-// ==============================================================
+// ============================= galaxy js =================================
 gsap.fromTo(
     "#galaxy",
     {
@@ -68,3 +69,23 @@ gsap.fromTo(
         duration: 50,
     }
 );
+// =============================== team-slider =====================================
+$(".slider").slick({
+    // autoplay: true,
+    // autoplaySpeed: 1500,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    adaptiveHeight: true,
+    centerMode: true,
+     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
