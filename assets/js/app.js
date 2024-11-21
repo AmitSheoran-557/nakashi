@@ -71,21 +71,60 @@ gsap.fromTo(
 );
 // =============================== team-slider =====================================
 $(".slider").slick({
-    // autoplay: true,
-    // autoplaySpeed: 1500,
+    autoplay: true,
+    autoplaySpeed: 1500,
     infinite: true,
     speed: 300,
     slidesToShow: 2,
     adaptiveHeight: true,
     centerMode: true,
-     variableWidth: true,
+    variableWidth: true,
     responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
         },
-      },
     ],
-  });
+});
+//   ================================= character slider  ======================================
+$(".anime-slider").on(
+    "init afterChange",
+    function (event, slick, currentSlide) {
+        $(".anime-slider .slick-slide").css("opacity", "0.5");
+        $(".anime-slider .slick-active").css("opacity", "1");
+    }
+);
+
+$(".anime-slider").slick("slickGoTo", 0);
+
+$(".next-arrow").on("click", function () {
+    $(".anime-slider").slick("slickNext");
+});
+
+$(".prev-arrow").on("click", function () {
+    $(".anime-slider").slick("slickPrev");
+});
+
+//   ========================================== video js ================================================
+ // Select the necessary elements
+const playButton = document.getElementById('play-btn');
+const videoModal = document.getElementById('video-modal');
+const videoPlayer = document.getElementById('video-player');
+const closeModal = document.getElementById('close-modal');
+
+// Show the video popup and play the video when the play button is clicked
+playButton.addEventListener('click', () => {
+    videoModal.classList.remove('hidden'); // Show the video modal
+    videoPlayer.play(); // Start the video playback
+});
+
+// Close the video popup and stop the video when the close button is clicked
+closeModal.addEventListener('click', () => {
+    videoModal.classList.add('hidden'); // Hide the video modal
+    videoPlayer.pause(); // Pause the video
+    videoPlayer.currentTime = 0; // Reset video to the start
+});
+

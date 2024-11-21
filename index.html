@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/img/png/fav-icon-img.webp">
+    <link rel="icon" href="./assets/img/webp/fav-icon-img.png">
     <title>Nakashi-LP</title>
     <meta name="title" content="Escape to Paradise with Clever Travel" />
     <meta name="description"
@@ -88,6 +88,7 @@
                         'btn-bg-2': "url('assets/img/webp/buy-now-btn-bg.png')",
                         'vdo-bg': "url('assets/img/webp/vdo-frame-img.png')",
                         'roadmap-bg': "url('assets/img/webp/roadmap-black-bg.png')",
+                        'white-bg': "url('assets/img/webp/how-it-work-sec-bg.png')"
 
                     },
                     background: {
@@ -187,7 +188,7 @@
                             Pages Manga
                             NFTs
                             Collections</h1>
-                        <div class="lg:pb-[100px] lg:flex gap-4 xl:mt-[200px] lg:mt-48 max-lg:hidden lg:block">
+                        <div class="lg:pb-[100px] lg:flex gap-4 xl:mt-[194px] lg:mt-48 max-lg:hidden lg:block">
                             <a href=""
                                 class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
                                 <img class="xl:size-5" src="./assets/img/svg/telegram-icon.svg" alt="telegram-icon">
@@ -250,13 +251,13 @@
         <!-- ================================= Pages section =========================================== -->
         <section id="about"
             class="flex justify-center items-center relative lg:pt-[146px] lg:pb-[157px] max-lg:py-[130px]">
-            <img class="w-full max-w-[1440px] absolute top-0 -mt-[1px]" src="./assets/img/webp/white-black-img-1.png"
+            <img class="w-full 2xl:max-w-[1920px] max-w-[1440px] absolute top-0 -mt-[1px]" src="./assets/img/webp/white-black-img-1.png"
                 alt="black-white-img">
-            <img class="w-full max-w-[1440px] absolute bottom-0 " src="./assets/img/webp/white-black-img-2.png"
+            <img class="w-full 2xl:max-w-[1920px] max-w-[1440px] absolute bottom-0 " src="./assets/img/webp/white-black-img-2.png"
                 alt="black-white-img">
             <div class="container mx-auto px-3">
                 <div class="flex flex-wrap max-lg:flex-col-reverse">
-                    <div class="lg:w-6/12 flex flex-col  justify-center max-lg:items-center lg:pt-10">
+                    <div class="lg:w-6/12 flex flex-col  justify-center max-lg:items-center lg:pt-7">
                         <p class="lg:text-lg md:text-base text-sm font-light tracking-[8%] mb-[10px] ">PAGES</p>
                         <h2 id="counter"
                             class="lg:text-8xl text-customLg tracking-[4%] leading-none font-hyper lg:mb-10 md:mb-7 mb-5">
@@ -278,7 +279,7 @@
 
         <!-- ================================= Slider section ========================================== -->
         <section id="character"
-            class="max-sm:min-h-[800px] bg-black-bg-2 bg-cover bg-no-repeat flex justify-center items-center relative -mt-1 lg:pb-44 pb-12 lg:pt-[116px] pt-[58px]">
+            class="max-sm:min-h-[800px] bg-black-bg-2 bg-cover bg-no-repeat flex justify-center items-center relative -mt-1 lg:pb-[182px] pb-12 lg:pt-[116px] pt-[58px]">
             <div class="container mx-auto">
                 <div class="flex flex-wrap">
                     <div class="lg:w-6/12 flex flex-col mx-auto justify-center max-lg:items-center">
@@ -381,18 +382,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-6/12 relative">
-                        <img class="max-w-[660px] w-full max-sm:max-w-[343px]" src="./assets/img/webp/pages-img.png"
-                            alt="">
+                    <div class="w-6/12 max-lg:w-full">
+                        <div>
+                            <div class="flex justify-end">
+                                <p
+                                    class="prev-arrow bg-[url(assets/images/png/prevbtn.png)] bg-no-repeat bg-center w-[64px] h-[60px flex items-center justify-center">
+                                    <img src="/assets/img/webp/slider-prev-arrow.png" alt="prev-aroow" />
+                                </p>
+                                <p
+                                    class="next-arrow bg-[url(assets/images/png/next-btn.png)] bg-no-repeat bg-center w-[80px] h-[60px flex items-center justify-center">
+                                    <img src="/assets/img/webp/slider-next-arrow.png" alt="next-aroow" />
+                                </p>
+                            </div>
+                            <div class="anime-slider flex items-center gap-6 overflow-hidden">
+                                <img src="/assets/img/webp/character-slider-img.png" alt="slider-img-1"
+                                    class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                                <img src="./assets/img/webp/character-slider-img.png" alt="slider-img-2"
+                                    class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                                <img src="./assets/img/webp/character-slider-img-2.png" alt="slider-img-3"
+                                    class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                                <img src="./assets/img/webp/character-slider-img.png" alt="slider-img-4"
+                                    class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ================================= Grid img section ======================================== -->
-        <section id="gallery" class="lg:pt-[200px] pt-[130px] relative">
-            <img class="w-full max-w-[1440px] absolute top-0 -mt-[1px]" src="./assets/img/webp/white-black-img-1.png"
-            alt="black-white-img">
+        <section id="gallery" class="lg:pt-[180px] pt-[130px] relative">
+            <img class="w-full 2xl:max-w-[1920px] max-w-[1440px] absolute top-0 -mt-[1px]" src="./assets/img/webp/white-black-img-1.png"
+                alt="black-white-img">
             <div class="container">
                 <div class="flex justify-between items-center mx-auto max-lg:flex-col">
                     <div
@@ -499,9 +520,10 @@
         </section>
 
         <!-- ================================= How it work section ===================================== -->
-        <section id="work" class="lg:pt-[120px] lg:pb-[200px] pt-[50px] pb-[130px] relative">
-            <img class="w-full max-w-[1440px] absolute bottom-0 -mb-1" src="./assets/img/webp/white-black-img-2.png"
-            alt="black-white-img">
+        <section id="work"
+            class="lg:pt-[120px] lg:pb-[200px] pt-[50px] pb-[130px] relative bg-white-bg bg-cover bg-no-repeat">
+            <img class="w-full 2xl:max-w-[1920px] max-w-[1440px] absolute bottom-0 -mb-1" src="./assets/img/webp/white-black-img-2.png"
+                alt="black-white-img">
             <div class="container mx-auto flex justify-center items-center">
                 <div class="flex flex-col flex-wrap">
                     <div class="relative">
@@ -522,15 +544,34 @@
                         galley of type and scrambled it to make a type specimen book.
                     </p>
 
-                    <div
-                        class="lg:w-[1140px] md:w-lg sm:w-sm w-[375px] mx-auto max-h-[642px] lg:h-[642px] h-[212px]  bg-vdo-bg bg-cover bg-no-repeat relative flex justify-center items-center">
-                        <img src="./assets/img/svg/play-btn-svg.svg" alt="play-btn-svg">
-                        <img class="absolute lg:-top-[62px] md:-top-[49px] -top-[46px] lg:max-w-[400px] md:max-w-80 max-w-[300px] -z-10"
+                    <!-- Play Button -->
+                    <div id="play-btn"
+                        class="lg:w-[1140px] md:w-lg sm:w-sm w-[375px] mx-auto max-h-[642px] lg:h-[642px] h-[212px] bg-vdo-bg bg-cover bg-no-repeat relative flex justify-center items-center cursor-pointer">
+                        <img id="play-btn" src="./assets/img/svg/play-btn-svg.svg" alt="play-btn-svg">
+                        <img class="absolute lg:-top-[62px] md:-top-[49px] -top-[46px] lg:max-w-[400px] md:max-w-80 max-w-[300px]"
                             src="./assets/img/webp/blue-box-img.png" alt="blue-box-img">
                     </div>
+
+                    <!-- Video Popup Modal -->
+                    <div id="video-modal"
+                        class="hidden fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+                        <div class="relative w-[90%] max-w-[800px]">
+                            <!-- Close Button -->
+                            <button id="close-modal"
+                                class="absolute top-2 right-2 text-white text-2xl font-bold">✖</button>
+                            <!-- Video -->
+                            <video loop muted id="video-player"
+                                class=" w-[700px] h-full">
+                                <source src="./72488-543388303_medium.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
+
 
         <!-- ================================= Roadmap section ========================================= -->
         <section id="roadmap" class="bg-roadmap-bg bg-cover bg-black bg-center bg-no-repeat lg:py-[100px] py-[50px]">
@@ -547,7 +588,7 @@
                     <img id="galaxy" src="/assets/img/webp/roadmap-gallxy-img.png" alt="galaxy-img"
                         class="lg:max-w-[700px] max-sm:max-w-[400px] w-full lg:h-[700px] translate-y-[-56px]">
                 </div>
-                <div class="road-map-parent -mt-10">
+                <div class="road-map-parent -mt-14">
                     <div class="w-full max-w-[364px] max-lg:px-6 group max-md:mx-auto  roadmap-box">
                         <div class="justify-between flex">
                             <p class="text-light-white font-normal text-[13px]">PHASE 1</p>
@@ -628,12 +669,16 @@
         <section id="team" class="bg-black-bg bg-cover bg-black bg-center bg-no-repeat py-[100px]">
             <div class="container">
                 <div class=" mx-auto w-full lg:mb-[120px] mb-[50px] lg:max-w-[443px] max-w-[233px] relative">
-                    <img class="absolute lg:top-[29px] top-2 lg:max-w-[456px] max-w-[233px]" src="./assets/img/webp/team-img.png" alt="team-bg">
-                    <p class="font-hyper font-normal lg:text-customLg max-lg:text-4xl   text-center mb-3 lg:mb-1 text-white">TEAM</p>
+                    <img class="absolute lg:top-[29px] top-2 lg:max-w-[456px] max-w-[233px]"
+                        src="./assets/img/webp/team-img.png" alt="team-bg">
+                    <p
+                        class="font-hyper font-normal lg:text-customLg max-lg:text-4xl   text-center mb-3 lg:mb-1 text-white">
+                        TEAM</p>
                     <p class="text-center lg:text-2xl text-sm leading-[150%] text-white translate-y-[-18px]">私たちのチーム</p>
                 </div>
                 <div class="flex items-center justify-center flex-col lg:pb-[100px] pb-[50px]">
-                    <p class="text-white font-light lg:text-2xl text-base text-center relative z-10">See who’s behind this cool
+                    <p class="text-white font-light lg:text-2xl text-base text-center relative z-10">See who’s behind
+                        this cool
                         project</p>
                 </div>
                 <div class="max-lg:hidden block">
@@ -770,7 +815,7 @@
                             </p>
                         </div>
                     </div>
-                  </div>
+                </div>
 
             </div>
         </section>
