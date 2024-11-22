@@ -1,9 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/reality-hyper');
 *{
@@ -24,11 +21,10 @@
     75% { transform: scale(0.95, 1.05); }
   }
 
-  /* =================================================================== */
+  /* =========================== team slider css ======================================== */
   .grid::-webkit-scrollbar {
 display: none;
   }
- 
 
   .founder{
     max-width: 267px;
@@ -44,4 +40,25 @@ display: none;
     }
   }
 
-  
+  /*========================== scroll btn keyframe ============================== */
+@keyframes bounce {
+
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@media (min-width:1920px) {
+  .icon {
+      right: calc((100vw - 1920px) / 2 + 30px) !important;
+  }
+}
