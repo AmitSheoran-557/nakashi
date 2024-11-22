@@ -89,6 +89,24 @@ $(".slider").slick({
         },
     ],
 });
+
+$(document).ready(function () {
+  const slider = $('.your-slider-class');
+
+  // Initialize Slick
+  slider.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+
+  // Use slickGoTo safely
+  slider.on('init', function () {
+    slider.slick('slickGoTo', 2); // Navigate to the third slide
+  });
+});
+
 //   ================================= character slider  ======================================
 $(".anime-slider").on(
     "init afterChange",
@@ -109,22 +127,29 @@ $(".prev-arrow").on("click", function () {
 });
 
 //   ========================================== video js ================================================
- // Select the necessary elements
-const playButton = document.getElementById('play-btn');
-const videoModal = document.getElementById('video-modal');
-const videoPlayer = document.getElementById('video-player');
-const closeModal = document.getElementById('close-modal');
+const playButton = document.getElementById("playButton");
+const videoModal = document.getElementById("videoModal");
+const videoElement = document.getElementById("videoElement");
+const closeButton = document.getElementById("closeButton");
 
-// Show the video popup and play the video when the play button is clicked
-playButton.addEventListener('click', () => {
-    videoModal.classList.remove('hidden'); // Show the video modal
-    videoPlayer.play(); // Start the video playback
+// Open the video modal
+playButton.addEventListener("click", () => {
+    videoModal.classList.remove("hidden");
+    videoElement.play();
 });
 
-// Close the video popup and stop the video when the close button is clicked
-closeModal.addEventListener('click', () => {
-    videoModal.classList.add('hidden'); // Hide the video modal
-    videoPlayer.pause(); // Pause the video
-    videoPlayer.currentTime = 0; // Reset video to the start
+// Close the video modal
+closeButton.addEventListener("click", () => {
+    videoModal.classList.add("hidden");
+    videoElement.pause();
+    videoElement.currentTime = 0; // Reset video to the start
 });
 
+// Close modal when clicking outside the video
+videoModal.addEventListener("click", (event) => {
+    if (event.target === videoModal) {
+        videoModal.classList.add("hidden");
+        videoElement.pause();
+        videoElement.currentTime = 0; // Reset video to the start
+    }
+});

@@ -29,13 +29,10 @@
     <link href="https://fonts.cdnfonts.com/css/reality-hyper" rel="stylesheet">
 
     <!-- ===================slider-cdn-link================= -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <script>
         tailwind.config = {
             theme: {
@@ -116,9 +113,12 @@
                     <a href="/"><img class="2xl:max-w-[118px] xl:max-w-24 max-w-20"
                             src="./assets/img/webp/page-logo.png" alt="page-logo"></a>
                     <div
-                        class="flex menulist justify-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 backdrop-blur-[40px] z-[100] lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
+                        class="flex menulist justify-center lg:items-center items-end duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 backdrop-blur-[40px] bg-black bg-opacity-[80%] z-[100] lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
                         <div
-                            class="font-medium xl:text-[13px] text-xs text-white 2xl:gap-[40px] xl:gap-8 lg:gap-7 gap-5 flex max-lg:flex-col max-lg:text-center">
+                            class="font-light xl:text-[13px] text-xl text-white lg:gap-[40px] gap-[37px] flex max-lg:flex-col max-lg:text-center">
+                            <a href="/">
+                                <h2 class="lg:hidden block text-2xl font-hyper tracking-[8%] absolute left-6 top-6 mb-[100px]">NAKASHI</h2>
+                            </a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#about">ABOUT</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#character">CHARACTER</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#gallery">GALLERY</a>
@@ -126,7 +126,7 @@
                             <a class="hover:text-primary duration-300 ease-linear" href="#roadmap">ROADMAP</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#team">TEAM</a>
                             <a class="hover:text-primary duration-300 ease-linear" href="#faq">FAQ</a>
-                            <div class="lg:pb-[100px] flex gap-4 xl:mt-[230px] lg:hidden block">
+                            <div class="lg:pb-[100px] flex gap-4 xl:mt-[230px] lg:hidden mt-[104px] pb-[50px] block">
                                 <a href=""
                                     class="xl:size-12 hover:bg-blue ease-linear duration-300 bg-white bg-opacity-[10%] p-[14px] flex justify-center items-center rounded-full">
                                     <img class="xl:size-5" src="./assets/img/svg/telegram-icon.svg" alt="telegram-icon">
@@ -177,14 +177,14 @@
                             src="./assets/img/webp/character-name.png" alt="character-name">
                         <div class="w-[1px] h-[344px] bg-white absolute -left-8 top-[250px] hidden lg:block"></div>
                         <h4
-                            class="max-w-[260px] max-sm:mt-1 text-center text-sm lg:text-white lg:mt-[167px] font-Sawarabi xl:mb-[29px] lg:mb-6 md:mb-4 mb-2">
+                            class="max-w-[260px] max-sm:mt-5 text-center text-sm lg:text-white lg:mt-[167px] font-Sawarabi xl:mb-[29px] lg:mb-6 md:mb-4 mb-2">
                             ナカシと彼の友人が彼らの宇宙宇宙をゴバーンから救おうとしている物語</h4>
                         <p
-                            class=" max-w-[327px] font-light text-sm text-center leading-primary lg:text-white lg:mb-[17px] mb-4">
+                            class=" max-w-[327px] font-light text-sm text-center leading-primary lg:text-white lg:mb-[17px] mb-5">
                             The
                             story of Nakashi and his friends trying to save
                             their universe from Gobern</p>
-                        <h1 class="max-w-80 lg:text-white text-5xl text-center max-lg:mb-12 max-sm:mb-[104px]">4000
+                        <h1 class="max-w-80 lg:text-white text-5xl text-center max-lg:mb-12 max-sm:mb-[120px]">4000
                             Pages Manga
                             NFTs
                             Collections</h1>
@@ -208,6 +208,8 @@
                         </div>
                     </div>
                     <div class="lg:w-8/12 w-full relative">
+                        <img class="max-w-[132px] absolute -left-5 top-14 block sm:hidden"
+                        src="./assets/img/webp/character-name.png" alt="character-name">
                         <img class="max-w-[750px] lg:max-h-[1000px] w-full xl:-translate-y-8 max-sm:translate-y-3 max-sm:ml-[10px] max-sm:max-w-[330px]"
                             src="./assets/img/webp/hero-sec-img.png" alt="character-img">
                         <a class="hidden lg:block" href="/"><img
@@ -221,7 +223,7 @@
 
         <!-- ================================= Nakashi project section ================================== -->
         <section
-            class="bg-black-bg bg-cover max-lg:pt-32 -mt-1 flex justify-center items-center lg:pt-[67px] pt-[50px] lg:pb-[274px] max-sm:pb-[50px]">
+            class="bg-black-bg bg-cover max-lg:pt-64 -mt-1 flex justify-center items-center lg:pt-[67px] pt-[50px] lg:pb-[274px] max-sm:pb-[50px]">
             <div class="container mx-auto px-3">
                 <div class="flex flex-wrap ">
                     <div class="lg:w-6/12 w-full relative flex justify-center items-center">
@@ -279,7 +281,7 @@
 
         <!-- ================================= Slider section ========================================== -->
         <section id="character"
-            class="max-sm:min-h-[800px] bg-black-bg-2 bg-cover bg-no-repeat flex justify-center items-center relative -mt-1 lg:pb-[162px] pb-12 lg:pt-[104px] pt-[58px]">
+            class="max-sm:min-h-[800px] bg-black-bg-2 bg-cover bg-no-repeat flex justify-center items-center relative -mt-1 lg:pb-[162px] pb-2 lg:pt-[104px] pt-[58px]">
             <div class="container mx-auto">
                 <div class="flex flex-wrap">
                     <div class="lg:w-6/12 flex flex-col mx-auto justify-center max-lg:items-center">
@@ -291,7 +293,7 @@
                             <p class="lg:mb-[76px] mb-[50px] text-2xl font-sawarabi text-white">キャラクター</p>
                         </div>
                         <p
-                            class="lg:max-w-[440px] font-light text-sm max-lg:px-3 leading-primary tracking-[2%] text-light-white mb-[168px]">
+                            class="lg:max-w-[440px] font-light text-sm max-lg:px-3 leading-primary tracking-[2%] text-light-white lg:mb-[168px] mb-2">
                             Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                             galley of type and scrambled it to make a type specimen book.</p>
@@ -306,8 +308,8 @@
                                 is simply dummy text of the
                                 printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy text ever since the 1500s.</p>
-                            <div class="flex max-md:flex-col lg:gap-10 md:gap-7 gap-[10px] items-center mb-4">
-                                <p class="text-white font-semibold text-base">Combat</p>
+                            <div class="flex max-md:flex-col lg:gap-10 md:gap-7 gap-[5px] items-center mb-4">
+                                <p class="text-white font-semibold uppercase lg:text-base text-sm">Combat</p>
                                 <div class="flex space-x-[2px] w-64 h-4 items-center">
                                     <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -342,8 +344,8 @@
                                 </div>
 
                             </div>
-                            <div class="flex max-md:flex-col lg:gap-10 md:gap-7 gap-[10px] items-center">
-                                <p class="text-white font-semibold text-base">Skill</p>
+                            <div class="flex max-md:flex-col lg:gap-10 md:gap-7 gap-[5px] items-center">
+                                <p class="text-white font-semibold uppercase lg:text-base text-sm">Skill</p>
                                 <div class="flex space-x-[2px]  w-64 md:ps-7 h-4 items-center">
                                     <div><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -384,25 +386,25 @@
                     </div>
                     <div class="w-6/12 max-lg:w-full">
                         <div>
-                            <div class="flex justify-end">
+                            <div class="flex lg:justify-end justify-center max-lg:mb-5">
                                 <p
-                                    class="prev-arrow bg-[url(assets/images/png/prevbtn.png)] bg-no-repeat bg-center w-[64px] h-[60px flex items-center justify-center">
+                                    class="prev-arrow bg-[url(assets/images/png/prevbtn.png)] bg-no-repeat cursor-pointer bg-center w-[64px]  h-[60px] flex items-center justify-center">
                                     <img src="/assets/img/webp/slider-prev-arrow.png" alt="prev-aroow" />
                                 </p>
                                 <p
-                                    class="next-arrow bg-[url(assets/images/png/next-btn.png)] bg-no-repeat bg-center w-[80px] h-[60px flex items-center justify-center">
+                                    class="next-arrow bg-[url(assets/images/png/next-btn.png)] bg-no-repeat cursor-pointer bg-center lg:w-[80px] w-16 h-[60px] flex items-center justify-center">
                                     <img src="/assets/img/webp/slider-next-arrow.png" alt="next-aroow" />
                                 </p>
                             </div>
                             <div class="anime-slider flex items-center gap-6 overflow-hidden">
                                 <img src="/assets/img/webp/character-slider-img.png" alt="slider-img-1"
-                                    class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                                    class="w-full max-w-[600px] lg:h-[800px] h-[440px] pointer-events-none" />
                                 <img src="./assets/img/webp/character-slider-img.png" alt="slider-img-2"
-                                    class="w-full max-w-[600px] h-[800px] pointer-events-none" />
-                                <img src="./assets/img/webp/character-slider-img-2.png" alt="slider-img-3"
-                                    class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                                    class="w-full max-w-[600px] lg:h-[800px] h-[440px] pointer-events-none" />
+                                <img src="./assets/img/webp/character-slider-img.png" alt="slider-img-3"
+                                    class="w-full max-w-[600px] lg:h-[800px] h-[440px] pointer-events-none" />
                                 <img src="./assets/img/webp/character-slider-img.png" alt="slider-img-4"
-                                    class="w-full max-w-[600px] h-[800px] pointer-events-none" />
+                                    class="w-full max-w-[600px] lg:h-[800px] h-[440px] pointer-events-none" />
                             </div>
                         </div>
                     </div>
@@ -411,16 +413,16 @@
         </section>
 
         <!-- ================================= Grid img section ======================================== -->
-        <section id="gallery" class="lg:pt-[180px] pt-[130px] relative">
+        <section id="gallery" class="lg:pt-[180px] md:pt-[130px] pt-[100px] relative">
             <img class="w-full 2xl:max-w-[1920px] max-w-[1440px] absolute top-0 -mt-[1px]"
                 src="./assets/img/webp/white-black-img-1.png" alt="black-white-img">
             <div class="container">
                 <div class="flex justify-between items-center mx-auto max-lg:flex-col">
                     <div
                         class="max-w-max text-center max-lg:mb-[50px] bg-[url('assets/images/png/manga-bg-img.png')] max-lg:w-full w-[572px] bg-no-repeat">
-                        <p class="text-[64px] font-normal text-light-brown leading-[100%] font-hyper pt-[18px]">GALLERY
+                        <p class="lg:text-[64px] text-4xl font-normal text-light-brown leading-[100%] font-hyper pt-[18px]">GALLERY
                         </p>
-                        <p class="text-light-brown font-normal text-2xl leading-[150%]">マンガのギャラリー</p>
+                        <p class="text-light-brown font-normal lg:text-2xl text-sm leading-[150%]">マンガのギャラリー</p>
                     </div>
                     <div class="max-w-[364px]">
                         <p class="font-semibold text-light-brown text-lg text-end">20 / 100%</p>
@@ -428,7 +430,7 @@
                     </div>
                 </div>
                 <p
-                    class="font-light lg:text-2xl text-base text-light-brown text-center pt-[120px] max-lg:pt-[50px] mb-[50px] max-md:pt-6">
+                    class="font-light lg:text-2xl text-base text-light-brown text-center pt-[120px] max-lg:pt-[50px] mb-[50px] max-md:pt-12">
                     4000 pages of story will be made</p>
                 <div
                     class=" flex items-center justify-center max-lg:px-4 lg:gap-6 gap-4 mb-[100px] max-lg:mb-14 max-md:mb-9 max-sm:mb-[50px] max-lg:flex-col">
@@ -521,7 +523,7 @@
 
         <!-- ================================= How it work section ===================================== -->
         <section id="work"
-            class="lg:pt-[120px] lg:pb-[200px] pt-[50px] pb-[130px] relative bg-white-bg bg-cover bg-no-repeat">
+            class="lg:pt-[120px] lg:pb-[200px] pt-[60px] pb-[130px] relative bg-white-bg bg-cover bg-no-repeat">
             <img class="w-full 2xl:max-w-[1920px] max-w-[1440px] absolute bottom-0 -mb-1"
                 src="./assets/img/webp/white-black-img-2.png" alt="black-white-img">
             <div class="container mx-auto flex justify-center items-center">
@@ -532,13 +534,13 @@
                         <h2 class="lg:text-customLg text-4xl tracking-[4%] leading-none font-hyper text-center">how IT
                             WORKS
                         </h2>
-                        <p class="lg:mb-[136px] mb-[50px] text-2xl font-sawarabi text-center">使い方</p>
+                        <p class="lg:mb-[136px] mb-[50px] lg:text-2xl text-sm font-sawarabi text-center">使い方</p>
                     </div>
-                    <p class="font-light lg:text-2xl md:text-xl text-base tracking-[2%] lg:mb-6 text-center">Mixed
+                    <p class="font-light lg:text-2xl md:text-xl text-base tracking-[2%] mb-5 text-center">Mixed
                         reality NFTs
                         project</p>
                     <p
-                        class="max-w-[735px] font-light lg:text-sm text-[13px] tracking-[2%] text-center mx-auto lg:mb-[112px] mb-[95px]">
+                        class="max-w-[735px] font-light lg:text-sm text-[13px] tracking-[2%] max-lg:px-[24.5px] text-center mx-auto lg:mb-[112px] mb-[100px]">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                         galley of type and scrambled it to make a type specimen book.
@@ -547,26 +549,30 @@
                     <!-- Play Button -->
                     <div id="play-btn"
                         class="lg:w-[1140px] md:w-lg sm:w-sm w-[375px] mx-auto max-h-[642px] lg:h-[642px] h-[212px] bg-vdo-bg bg-cover bg-no-repeat relative flex justify-center items-center cursor-pointer">
-                        <img id="play-btn" src="./assets/img/svg/play-btn-svg.svg" alt="play-btn-svg">
+                        <button id="playButton"
+                        class="flex items-center justify-center w-16 h-16 bg-[#333333] rounded-full shadow-lg hover:bg-opacity-80">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-8 h-8">
+                            <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                    </button>
                         <img class="absolute lg:-top-[62px] md:-top-[49px] -top-[46px] lg:max-w-[400px] md:max-w-80 max-w-[300px]"
                             src="./assets/img/webp/blue-box-img.png" alt="blue-box-img">
                     </div>
-
-                    <!-- Video Popup Modal -->
-                    <div id="video-modal"
-                        class="hidden fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
-                        <div class="relative w-[90%] max-w-[800px]">
-                            <!-- Close Button -->
-                            <button id="close-modal"
-                                class="absolute top-2 right-2 text-white text-2xl font-bold">✖</button>
+                    <!-- Popup Modal -->
+                    <div id="videoModal"
+                        class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                        <div class="relative w-[1140px] h-[642px] bg-black">
                             <!-- Video -->
-                            <video loop muted id="video-player" class=" w-[700px] h-full">
-                                <source src="./72488-543388303_medium.mp4" type="video/mp4" />
+                            <video id="videoElement" class="w-full h-full" controls>
+                                <source src="./72488-543388303_medium.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
                             </video>
+                            <!-- Close Button -->
+                            <button id="closeButton" class="absolute top-2 right-2 text-white text-2xl font-bold">
+                                &times;
+                            </button>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
@@ -574,17 +580,17 @@
         <!-- ================================= Roadmap section ========================================= -->
         <section id="roadmap" class="bg-roadmap-bg bg-cover bg-black bg-center bg-no-repeat lg:py-[100px] py-[50px]">
             <div class="container">
-                <div class="n mx-auto w-full max-w-[770px] relative">
-                    <img class="absolute top-7 max-w-[790px]" src="./assets/img/webp/roadmap-bg.png" alt="roadmap-bg">
-                    <p class="font-hyper font-normal text-[64px] text-center text-white">ROADMAP</p>
-                    <p class="text-center text-2xl leading-[150%] text-white translate-y-[-18px]">ロードマップ</p>
+                <div class="mx-auto w-full lg:max-w-[770px] max-w-sm relative">
+                    <img class="absolute lg:top-7 lg:mb-0  top-4 lg:max-w-[790px] max-w-[392px]" src="./assets/img/webp/roadmap-bg.png" alt="roadmap-bg">
+                    <p class="font-hyper font-normal lg:text-[64px] mb-2 leading-normal text-4xl text-center text-white">ROADMAP</p>
+                    <p class="text-center lg:text-2xl text-sm leading-[150%] text-white translate-y-[-18px]">ロードマップ</p>
                 </div>
                 <div
-                    class="max-lg:overflow-hidden flex items-center justify-center flex-col pt-28 max-lg:pt-10 max-md:pt-7 max-sm:pt-5">
-                    <p class="text-white font-light text-2xl text-center relative z-10">There’s more than one star in
+                    class="max-lg:overflow-hidden flex items-center justify-center flex-col lg:pt-28 pt-12 mx-auto">
+                    <p class="text-white font-light lg:text-2xl text-base text-center relative z-10 max-sm:max-w-52">There’s more than one star in
                         the galaxy</p>
                     <img id="galaxy" src="/assets/img/webp/roadmap-gallxy-img.png" alt="galaxy-img"
-                        class="lg:max-w-[700px] max-sm:max-w-[400px] w-full lg:h-[700px] translate-y-[-56px]">
+                        class="lg:max-w-[700px] max-sm:max-w-[400px] w-full lg:h-[700px] mx-auto max-md:mt-28 translate-y-[-56px]">
                 </div>
                 <div class="road-map-parent -mt-14">
                     <div class="w-full max-w-[364px] max-lg:px-6 group max-md:mx-auto roadmap-box">
@@ -597,8 +603,8 @@
                                 </p>
                             </div>
                         </div>
-                        <h4 class="font-hyper text-white font-normal text-[32px] pt-6 max-md:text-[28px]">Q2 2022</h4>
-                        <p class="text-sm text-light-white pt-5 max-md:text-[13px]">Lorem Ipsum is
+                        <h4 class="font-hyper text-white font-normal text-[32px] lg:pt-6 pt-4 max-md:text-[28px]">Q2 2022</h4>
+                        <p class="lg:text-sm text-[13px] font-light text-light-white lg:pt-5 pt-4 max-md:text-[13px]">Lorem Ipsum is
                             simply
                             dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                             standard dummy text ever since.</p>
@@ -614,8 +620,8 @@
                                 </p>
                             </div>
                         </div>
-                        <h4 class="font-hyper text-white font-normal text-[32px] pt-6 max-md:text-[28px]">Q3 2022</h4>
-                        <p class="text-sm text-light-white pt-5 max-md:text-[13px]">Lorem Ipsum is
+                        <h4 class="font-hyper text-white font-normal text-[32px] lg:pt-6 pt-4 max-md:text-[28px]">Q3 2022</h4>
+                        <p class="lg:text-sm text-[13px] font-light text-light-white lg:pt-5 pt-4 max-md:text-[13px]">Lorem Ipsum is
                             simply
                             dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -632,8 +638,8 @@
                                 </p>
                             </div>
                         </div>
-                        <h4 class="font-hyper text-white font-normal text-[32px] pt-6 max-md:text-[28px]">Q3 2022</h4>
-                        <p class="text-sm text-light-white pt-5 max-md:text-[13px]">Lorem Ipsum is
+                        <h4 class="font-hyper text-white font-normal text-[32px] lg:pt-6 pt-4 max-md:text-[28px]">Q3 2022</h4>
+                        <p class="lg:text-sm text-[13px] font-light text-light-white lg:pt-5 pt-4 max-md:text-[13px]">Lorem Ipsum is
                             simply
                             dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -650,9 +656,9 @@
                                 </p>
                             </div>
                         </div>
-                        <h4 class="font-hyper text-white font-normal text-[32px] pt-6 max-md:text-[28px]">Q1 / Q2 2023
+                        <h4 class="font-hyper text-white font-normal text-[32px] lg:pt-6 pt-4 max-md:text-[28px]">Q1 / Q2 2023
                         </h4>
-                        <p class="text-sm text-light-white pt-5 max-md:text-[13px]">Lorem Ipsum is
+                        <p class="lg:text-sm text-[13px] font-light text-light-white lg:pt-5 pt-4 max-md:text-[13px]">Lorem Ipsum is
                             simply
                             dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                             standard dummy text ever since.</p>
@@ -664,7 +670,7 @@
         </section>
 
         <!-- ================================= Team section =========================================== -->
-        <section id="team" class="bg-black-bg bg-cover bg-black bg-center bg-no-repeat py-[100px]">
+        <section id="team" class="bg-black-bg bg-cover bg-black bg-center bg-no-repeat lg:pt-[100px] lg:pb-[110px] pt-[87px] mt-[-1px]">
             <div class="container">
                 <div class=" mx-auto w-full lg:mb-[114px] mb-[50px] lg:max-w-[443px] max-w-[233px] relative">
                     <img class="absolute lg:top-[29px] top-2 lg:max-w-[456px] max-w-[233px]"
@@ -674,7 +680,7 @@
                         TEAM</p>
                     <p class="text-center lg:text-2xl text-sm leading-[150%] text-white translate-y-[-18px]">私たちのチーム</p>
                 </div>
-                <div class="flex items-center justify-center flex-col lg:pb-[100px] pb-[50px]">
+                <div class="flex items-center justify-center flex-col lg:pb-[90px] pb-[50px]">
                     <p class="text-white font-light lg:text-2xl text-base text-center relative z-10">See who’s behind
                         this cool
                         project</p>
@@ -1012,17 +1018,15 @@
             </div>
         </footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
             integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>'
+        '
         <script src="./assets/js/app.js" defer></script>
     </main>
 </body>
