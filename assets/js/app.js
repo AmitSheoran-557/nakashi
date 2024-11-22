@@ -90,41 +90,15 @@ $(".slider").slick({
     ],
 });
 
-$(document).ready(function () {
-  const slider = $('.your-slider-class');
-
-  // Initialize Slick
-  slider.slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-
-  // Use slickGoTo safely
-  slider.on('init', function () {
-    slider.slick('slickGoTo', 2); // Navigate to the third slide
-  });
-});
-
 //   ================================= character slider  ======================================
-$(".anime-slider").on(
-    "init afterChange",
-    function (event, slick, currentSlide) {
-        $(".anime-slider .slick-slide").css("opacity", "0.5");
-        $(".anime-slider .slick-active").css("opacity", "1");
-    }
-);
-
-$(".anime-slider").slick("slickGoTo", 0);
-
-$(".next-arrow").on("click", function () {
-    $(".anime-slider").slick("slickNext");
-});
-
-$(".prev-arrow").on("click", function () {
-    $(".anime-slider").slick("slickPrev");
-});
+$('.slider-2').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    prevArrow: $('.prev-arrow'),
+      nextArrow: $('.next-arrow'),
+  });
 
 //   ========================================== video js ================================================
 const playButton = document.getElementById("playButton");
