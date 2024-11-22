@@ -39,26 +39,40 @@ display: none;
       max-width: 245px;
     }
   }
-
-  /*========================== scroll btn keyframe ============================== */
-@keyframes bounce {
-
-  0%,
+ 
+/* ============================= move left to right keyframe ====================================== */
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);  
+  }
   100% {
-      transform: translateY(0);
-  }
-
-  50% {
-      transform: translateY(-10px);
+    transform: translateX(0);  
   }
 }
 
-.animate-bounce {
-  animation: bounce 1s infinite;
+.scrolling-container {
+  display: flex;
+  animation: scrollRight 15s linear infinite;  
 }
 
-@media (min-width:1920px) {
-  .icon {
-      right: calc((100vw - 1920px) / 2 + 30px) !important;
+
+/*========================== Keyframes for infinite right-to-left scroll =============================*/
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);  
   }
+  100% {
+    transform: translateX(-100%);  
+  }
+}
+
+.scrolling-container-2 {
+  display: flex;
+  animation: scrollLeft 15s linear infinite;  
+}
+
+.scrolling-wrapper {
+  display: flex;
+  overflow: hidden;  
+  width: 100%; 
 }

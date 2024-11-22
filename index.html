@@ -100,12 +100,8 @@
 </head>
 
 <body>
-    <main class="overflow-hidden relative max-w-[1440] mx-auto">
-        <!-- Scroll to Top Button -->
-        <button id="scrollToTopBtn"
-            class="hidden icon fixed xl:bottom-5 lg:bottom-3  bottom-2 xl:right-5 lg:right-3 right-2 xl:px-[19px] xl:py-2.5 lg:px-[13px] xl:pb-3 lg:pb-2 px-[11px] pb-1 text-xl bg-blue text-white rounded-md shadow-md hover:bg-gray-600 transition-opacity z-[9999] animate-bounce">
-            ↑
-        </button>   
+    <main class="overflow-hidden relative max-w-[1440px] mx-auto">
+        
 
         <!-- ================================= Hero section ============================================= -->
         <section class="lg:bg-hero-bg bg-hero-bg-2 bg-cover bg-center bg-no-repeat" id="hero">
@@ -226,7 +222,8 @@
 
         <!-- ================================= Nakashi project section ================================== -->
         <section
-            class="bg-black-bg bg-cover max-lg:pt-64 -mt-1 flex justify-center items-center lg:pt-[67px] pt-[50px] lg:pb-[274px] max-sm:pb-[50px]" id="second-section">
+            class="bg-black-bg bg-cover max-lg:pt-64 -mt-1 flex justify-center items-center lg:pt-[67px] pt-[50px] lg:pb-[274px] max-sm:pb-[50px]"
+            id="second-section">
             <div class="container mx-auto px-3">
                 <div class="flex flex-wrap ">
                     <div class="lg:w-6/12 w-full relative flex justify-center items-center">
@@ -296,12 +293,12 @@
                             <p class="lg:mb-[76px] mb-[50px] text-2xl font-sawarabi text-white">キャラクター</p>
                         </div>
                         <p
-                            class="lg:max-w-[440px] font-light text-sm max-lg:px-3 leading-primary tracking-[2%] text-light-white lg:mb-[168px] mb-2">
+                            class="lg:max-w-[440px] font-light text-sm max-lg:px-3 leading-primary tracking-[2%] text-light-white lg:mb-[170px] mb-2">
                             Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                             galley of type and scrambled it to make a type specimen book.</p>
                         <div
-                            class="max-w-[655px] bg-box-bg bg-cover lg:px-[60px] lg:py-[60px] md:px-8 px-6 py-[50px] w-full mb-10 ">
+                            class="max-w-[655px] xl:max-h-[340px] bg-box-bg bg-cover lg:px-[60px] lg:py-[60px] md:px-8 px-6 py-[50px] w-full mb-10 ">
                             <h3
                                 class="font-hyper xl:text-5xl lg:text-4xl md:text-3xl text-2xl max-lg:text-center mb-4 tracking-[4%] text-white">
                                 THALIK</h3>
@@ -410,14 +407,15 @@
         </section>
 
         <!-- ================================= Grid img section ======================================== -->
-        <section id="gallery" class="lg:pt-[180px] md:pt-[130px] pt-[100px] relative">
+        <section id="gallery" class="lg:pt-[190px] md:pt-[130px] pt-[100px] relative">
             <img class="w-full 2xl:max-w-[1920px] max-w-[1440px] absolute top-0 -mt-[1px]"
                 src="./assets/img/webp/white-black-img-1.webp" alt="black-white-img">
-            <div class="container">
+            <div>
                 <div class="flex justify-between items-center mx-auto max-lg:flex-col">
                     <div
                         class="max-w-max relative text-center max-lg:mb-[50px] bg-[url('assets/images/png/manga-bg-img.webp')] max-lg:w-full w-[572px] bg-no-repeat">
-                        <img class="absolute xl:max-w-[672px] lg:max-w-[500px] max-w-72 top-6 -left-12 lg:top-7 lg:left-0" src="./assets/img/webp/gallery-bg-img.webp" alt="manga-bg-img">
+                        <img class="absolute xl:max-w-[672px] lg:max-w-[500px] max-w-72 top-6 -left-12 lg:top-7 lg:left-0"
+                            src="./assets/img/webp/gallery-bg-img.webp" alt="manga-bg-img">
                         <p
                             class="lg:text-[64px] text-4xl font-normal text-light-brown leading-[100%] font-hyper pt-[18px]">
                             GALLERY
@@ -478,43 +476,84 @@
                 </div>
                 <div class="flex flex-col lg:gap-5 gap-2">
 
-                    <div class="grid grid-flow-col lg:gap-4 gap-2 overflow-x-auto">
-                        <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-one"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-two"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-three"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="/assets/img/webp/grid-sec-img-3.webp " alt="gallery-page-four"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-five"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+
+                    <div class="relative overflow-hidden w-screen h-[480px] max-w-[1440px] mx-auto">
+                        <!-- Infinite Scrolling Images -->
+                        <div class="scrolling-container flex lg:gap-4 gap-2">
+                            <!-- Image Set 1 -->
+                            <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-one"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-two"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-three"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-3.webp" alt="gallery-page-four"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-five"
+                                class="h-[480px] w-[320px] object-cover">
+
+                            <!-- Image Set 2 (Duplicate for seamless looping) -->
+                            <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-one"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-two"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-three"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-3.webp" alt="gallery-page-four"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-five"
+                                class="h-[480px] w-[320px] object-cover">
+                        </div>
                     </div>
 
-                    <div class="grid grid-flow-col lg:gap-4 gap-2 overflow-x-auto">
-                        <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-one"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-two"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-3.webp" alt="gallery-page-three"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-four"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-five"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                    </div>
+                    <div class="scrolling-wrapper h-[480px] max-w-[1440px] mx-auto">
+                        <!-- Scrolling Images -->
+                        <div class="scrolling-container-2 flex lg:gap-4 gap-2">
+                          <!-- Image Set 1 -->
+                          <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-one" class="h-[480px] w-[320px] object-cover">
+                          <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-two" class="h-[480px] w-[320px] object-cover">
+                          <img src="./assets/img/webp/grid-sec-img-3.webp" alt="gallery-page-three" class="h-[480px] w-[320px] object-cover">
+                          <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-four" class="h-[480px] w-[320px] object-cover">
+                          <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-five" class="h-[480px] w-[320px] object-cover">
+                          
+                          <!-- Duplicate Images for Seamless Loop -->
+                          <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-one" class="h-[480px] w-[320px] object-cover">
+                          <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-two" class="h-[480px] w-[320px] object-cover">
+                          <img src="./assets/img/webp/grid-sec-img-3.webp" alt="gallery-page-three" class="h-[480px] w-[320px] object-cover">
+                          <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-four" class="h-[480px] w-[320px] object-cover">
+                          <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-five" class="h-[480px] w-[320px] object-cover">
+                        </div>
+                      </div>
 
-                    <div class="grid grid-flow-col lg:gap-4 gap-2 overflow-x-auto">
-                        <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-one"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-3.webp" alt="gallery-page-two"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-three"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-four"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
-                        <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-five"
-                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    <div class="relative overflow-hidden w-screen h-[480px] max-w-[1440px] mx-auto">
+                        <!-- Infinite Scrolling Images -->
+                        <div class="scrolling-container flex lg:gap-4 gap-2">
+                            <!-- Image Set 1 -->
+
+                            <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-two"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-three"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-one"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-3.webp" alt="gallery-page-four"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-five"
+                                class="h-[480px] w-[320px] object-cover">
+
+                            <!-- Image Set 2 (Duplicate for seamless looping) -->
+
+                            <img src="./assets/img/webp/grid-sec-img-5.webp" alt="gallery-page-two"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-1.webp" alt="gallery-page-one"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-2.webp" alt="gallery-page-three"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-3.webp" alt="gallery-page-four"
+                                class="h-[480px] w-[320px] object-cover">
+                            <img src="./assets/img/webp/grid-sec-img-4.webp" alt="gallery-page-five"
+                                class="h-[480px] w-[320px] object-cover">
+                        </div>
                     </div>
                 </div>
 
@@ -971,8 +1010,8 @@
                             src="./assets/img/webp/community-section-img.webp" alt="characters-img">
                         <img class="max-lg:block max-sm:hidden" src="./assets/img/webp/community-sec-img-2.webp"
                             alt="characters-img">
-                        <img class="max-sm:block hidden translate-y-10" src="./assets/img/webp/community-sec-img-sm.webp"
-                            alt="characters-img">
+                        <img class="max-sm:block hidden translate-y-10"
+                            src="./assets/img/webp/community-sec-img-sm.webp" alt="characters-img">
                     </div>
                     <div class="lg:w-4/12 px-3 flex flex-col mx-auto max-lg:items-center lg:pt-80 pt-2">
                         <h2
